@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace P2POO.Logging
 {
-    class ConsoleLogger
+    public class ConsoleLogger : ILogger
     {
+        public void Log(string mensagem)
+        {
+            Console.WriteLine($"[LOG - {DateTime.Now}] {mensagem}");
+        }
     }
 }
