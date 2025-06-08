@@ -1,4 +1,5 @@
-﻿using System;
+﻿using P2POO.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace P2POO.Discount
 {
-    interface IDiscountStrategy
+    public interface IDiscountStrategy
     {
+        decimal CalcularDesconto(Pedido pedido);
     }
 }
