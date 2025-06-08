@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace P2POO.Logging
 {
-    interface ILogger
+    public interface ILogger
     {
+        void Log(string mensagem);
     }
 }
