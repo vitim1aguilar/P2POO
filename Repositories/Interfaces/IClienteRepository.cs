@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P2POO.Interfaces
 {
-    interface IClienteRepository
+    public interface IClienteRepository
     {
         void Adicionar(Cliente cliente);
         IEnumerable<Cliente> ObterTodos();

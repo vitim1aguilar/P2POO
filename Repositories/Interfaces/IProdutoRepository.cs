@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P2POO.Interfaces
 {
-    interface IProdutoRepository
+    public interface IProdutoRepository
     {
         void Adicionar(Produto produto);
         IEnumerable<Produto> ObterTodos();

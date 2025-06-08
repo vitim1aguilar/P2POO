@@ -16,7 +16,7 @@ namespace P2POO.Models
         public ItemPedido(Produto produto, int quantidade)
         {
             if (quantidade <= 0)
-                throw new ArgumentException("");
+                throw new ArgumentException("A quantidade deve ser maior que zero.");
 
             Produto = produto ?? throw new ArgumentNullException(nameof(produto));
             Quantidade = quantidade;
