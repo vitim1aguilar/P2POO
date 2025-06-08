@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P2POO.Logging
+namespace P2POO.Services.Logging
 {
     public class ConsoleLogger : ILogger
     {

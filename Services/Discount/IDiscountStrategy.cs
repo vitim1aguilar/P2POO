@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P2POO.Discount
+namespace P2POO.Services.Discount
 {
     public interface IDiscountStrategy
     {

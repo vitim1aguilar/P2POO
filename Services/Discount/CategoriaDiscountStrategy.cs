@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P2POO.Discount
+namespace P2POO.Services.Discount
 {
-    public class QuantidadeDiscountStrategy : IDiscountStrategy
+    public class CategoriaDiscountStrategy : IDiscountStrategy
     {
         public decimal CalcularDesconto(Pedido pedido)
         {
@@ -15,9 +15,9 @@ namespace P2POO.Discount
 
             foreach (var item in pedido.Itens)
             {
-                if (item.Quantidade >= 5)
+                if (item.Produto.Categoria.Equals("Eletrônico", StringComparison.OrdinalIgnoreCase))
                 {
-                    desconto += item.ValorTotal * 0.05m;
+                    desconto += item.ValorTotal * 0.10m;
                 }
             }
 
